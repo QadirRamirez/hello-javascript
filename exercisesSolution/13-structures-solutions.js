@@ -52,10 +52,22 @@ console.log(mesesAño)
 
 // 8. 
 
-    console.log(mesesAño.has(5))
-
+    console.log(mesesAño.has("Mayo"))
+    console.log(mesesAño.get("Mayo"))
 
 // 9. 
 
+    let verano = ["Enero", "Febrero", "Marzo"]
+    mesesAño.set("verano", verano)
+    console.log(mesesAño)
 
 // 10. 
+let myMap = new Map([])
+let mySet = new Set([])
+
+let myArray = ["Qadir", "Ramirez", 19]
+mySet = new Set([myArray])
+myMap = new Map([
+    [mySet, "MiSetenMapa"]
+])
+console.log(myMap)
