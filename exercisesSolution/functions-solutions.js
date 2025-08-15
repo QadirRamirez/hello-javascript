@@ -26,21 +26,40 @@ console.log(numeroMayor(numeros));
 // 3.
 
 function totalVocals(string) {
+    let vocals = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+    let count = 0
 
-    let vocals = [aeiouAEIOU]
-
-    for (i = 0; i < vocals.length; i++) {
-        
+    for (i = 0; i < string.length; i++) {
+        if (vocals.includes(string[i])) {
+            count++
+        } else {
+        continue
     }
-
+    
+    }
+    console.log(count)
 
 } 
-
+totalVocals("Qadir Ramirez")
 
 // 4.
 
+    function myArray(array = []) {
+        let newArray = []
+        for (i = 0; i < array.length; i++) {
+            newArray.push(array[i].toUpperCase())
+
+        }
+        console.log(newArray)
+    }
+
+    myArray(["Qadir", "Ricardo", "Ramirez", "Teran"])
+
+
 
 // 5.
+
+    
 
 
 // 6.
